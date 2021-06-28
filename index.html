@@ -4,6 +4,9 @@
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/style.css" />
 
@@ -23,12 +26,19 @@
       </header>
       <!-- Fine Header -->
 
+      <div class="freccia-sx">
+         <i class="fas fa-caret-left"></i>
+      </div>
+
+      <div class="freccia-dx">
+         <i class="fas fa-caret-right"></i>
+      </div>
+
       <!-- Inizio Main -->
-      <main>
-         
+      <main>      
             <div class="box">
                <img src="img/woman.png" alt="viso donna">
-               <p></p>
+               <p>Boolean</p>
             </div>
             <div class="box">
                <img src="img/woman.png" alt="viso donna">
@@ -110,18 +120,59 @@
       <!-- Inizio Footer -->
       <footer>
           <div class="bottom sx">
-            <i class="fas fa-microphone"></i>
-            <p>Mute</p>
+             <div class="mute stop">
+               <i class="fas fa-microphone"></i>
+               <p>Mute</p>
+            </div>
             <i class="fas fa-angle-up"></i>
-            <i class="fas fa-video"></i>
-            <p>Stop Video</p>
+            <div class="video stop">
+               <i class="fas fa-video"></i>
+               <p>Stop Video</p>
+            </div>
             <i class="fas fa-angle-up"></i>
           </div>
-          <div class="bottom ce"></div>
-          <div class="bottom dx"></div>
-               <!-- <i class="fas fa-angle-up"></i>
-               
-               <i class="fas fa-user"></i> -->
+          <div class="bottom ce">
+             <div class="invite items">
+               <i class="fas fa-user"></i>
+               <p>Invite</p>
+             </div>
+             <div class="participants items">
+               <i class="fas fa-user-friends"></i>
+               <p>Manage Participants</p>
+             </div>
+             <div class="poling items">
+               <i class="fab fa-deezer"></i>
+               <p>Poling</p>
+             </div>
+             <div class="screen items">
+               <i class="fas fa-folder-plus"></i>
+               <p>Share Screen</p>
+             </div>
+            <i class="fas fa-angle-up"></i>
+            <div class="chat items">
+               <i class="far fa-comment-dots"></i>
+               <p>Chat</p>
+             </div>
+             <div class="record items">
+               <i class="fas fa-record-vinyl"></i>
+               <p>Record</p>
+             </div>
+             <div class="rooms items">
+               <i class="fas fa-th-large"></i>
+               <p>Breakout Rooms</p>
+             </div>
+             <div class="more items">
+               <i class="fas fa-ellipsis-h"></i>
+               <p>More</p>
+             </div>
+
+          </div>
+          <div class="bottom dx">
+             <div class="meeting">
+                <p>End Meeting</p>
+             </div>
+          </div>
+           
             
       </footer>
       <!-- Fine Footer -->

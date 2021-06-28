@@ -9,8 +9,9 @@
    width: 100vw;
    height: 100vh;
    display: flex;
-   background-color: lightgrey;
+   background-color: black;
    flex-direction: column;
+   font-family: 'Roboto', sans-serif;
 }
 /* Fine Common */
 /* -------------------------------------------------- */
@@ -18,7 +19,6 @@
 
 header {
    height: 40px;
-   background-color: blueviolet;
    display: flex;
    flex-wrap: wrap;
    align-content: center;
@@ -29,7 +29,7 @@ header {
 
 .view {
    border-radius: 5px;
-   background-color: lightgrey;
+   background-image: linear-gradient(rgb(73, 73, 73), rgb(41, 41, 41));
    margin-right: 20px;
    padding: 10px;
 }
@@ -40,7 +40,7 @@ header {
 
 .zoom {
    border-radius: 5px;
-   background-color: lightgrey;
+   background-image: linear-gradient(rgb(73, 73, 73), rgb(41, 41, 41));
    padding: 10px;
 }
 
@@ -60,6 +60,37 @@ main {
    justify-content: center;
 }
 
+.freccia-sx {
+   width: 5vw;
+   background-color: salmon;
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+   font-size: 50px;
+   padding: 0 60px;
+}
+
+.freccia-sx > i {
+   max-width: 5vw;
+   background-color: red;
+   
+}
+
+.freccia-dx {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   align-content: center;
+   background-color: red;
+   position: absolute;
+   top: 50%;
+   right: 0%;
+   transform: translate(0, -50%);
+   font-size: 50px;
+   padding: 0 60px;
+}
+
 .box {
    width: calc(100% / 5);
    height: 20%;
@@ -70,7 +101,7 @@ main {
 }
 
 .box img {
-   max-width: 50%;
+   max-width: 40%;
    background-color: white;
 }
 
@@ -80,33 +111,85 @@ main {
 
 footer {
    height: 60px;
-   background-color: blueviolet;
+   background-image: linear-gradient(rgb(73, 73, 73), rgb(41, 41, 41));
    width: 100%;
    position: absolute;
    bottom: 0; 
    display: flex;
 }
  
-.icone {
-   width: 100%;
+footer div i {
+   font-size: 27px;
 }
 
 .bottom {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   background-color: tomato;
 }
 
-.sx,
-.dx {
-   width: 30%;
+.sx {
+   min-width: 10%;
    display: flex;
    flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-start;
+   padding-left: 20px;
+}
+
+.dx {
+   min-width: 10%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: flex-end;
 }
 
 .ce {
-   width: 40%;
+   min-width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.items, .meeting, .stop {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-left: 10px;
+   justify-content: center;
+}
+
+.items {
+   padding-left: 30px;
+}
+
+.screen > i {
+   color: chartreuse;
+}
+
+.fa-angle-up {
+   line-height: 60px;  
+}
+
+.fas, p, span, .far, .fab {
+   color: rgb(192, 192, 192);
+}
+
+p {
+   font-size: 12px;
+}
+
+.meeting {
+   background-color: rgb(73, 73, 73);
+   padding: 0 20px;
+}
+
+.meeting > p {
+   color: red;
+ 
 }
 
 /* Fine Footer */
